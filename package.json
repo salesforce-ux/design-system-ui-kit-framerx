@@ -9,7 +9,8 @@
 		"react": "^16.8"
 	},
 	"framer": {
-		"id": "57a672af-e308-4a27-b5d3-96122b0a9ced"
+		"id": "57a672af-e308-4a27-b5d3-96122b0a9ced",
+		"displayName": "SLDS React for FramerX"
 	},
 	"author": "Fernando Hurtado",
 	"dependencies": {
@@ -17,5 +18,7 @@
 		"@salesforce-ux/design-system": "^2.9.4",
 		"@salesforce/design-system-react": "^0.10.11",
 		"moment": "^2.24.0"
-	}
+	},
+	"name": "@framer/salesforce.slds-react-for-framerx",
+	"version": "1.0.0"
 }

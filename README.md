@@ -1,15 +1,10 @@
-## Salesforce Lightning Design System for React
+
 
 This repository holds Framer code components for [Salesforce' Lightning Design System for React](https://react.lightningdesignsystem.com/).
 
-### Getting Started
-
-1. Clone this repository: `git@github.com:framer/salesforce-lightning.framerfx.git`
-2. Double click to open with Framer X.
-
 ### Release Notes
 
-There were a few components left out for the first pass, ones that aren't so core to the Lightning Design System. Let's focus on completing the tasks/components above before moving onto the ones below.
+There were a few components left out for the first pass to get us started.
 
 - Removed App Launcher for first pass
 - Removed Builder Header for first pass
