@@ -1,0 +1,21 @@
+on:
+  push:
+    branches: master
+name: Build and publish
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Build
+        uses: framer/bridge@master
+        with:
+          args: build .
+
+      - name: Publish
+        uses: framer/bridge@master
+        env:
+          FRAMER_TOKEN: ${{ secrets.FRAMER_TOKEN }}
+        with:
+          args: publish . --yes
