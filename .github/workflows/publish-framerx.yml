@@ -10,12 +10,14 @@ jobs:
 
       - name: Build
         uses: framer/bridge@master
+        env:
+          FRAMER_TOKEN: ${{ secrets.FRAMER_TOKEN }}
         with:
-          args: build .
+          args: build
 
       - name: Publish
         uses: framer/bridge@master
         env:
           FRAMER_TOKEN: ${{ secrets.FRAMER_TOKEN }}
         with:
-          args: publish . --yes
+          args: publish --yes
