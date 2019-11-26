@@ -20,5 +20,5 @@
 		"moment": "^2.24.0"
 	},
 	"name": "@framer/salesforce.slds-react-for-framerx",
-	"version": "1.0.0"
+	"version": "1.2.0"
 }
