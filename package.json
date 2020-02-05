@@ -1,6 +1,6 @@
 {
-	"main": "dist/index.js",
 	"license": "MIT",
+	"main": "dist/index.js",
 	"devDependencies": {
 		"@types/react": "^16.8"
 	},
@@ -9,16 +9,16 @@
 		"react": "^16.8"
 	},
 	"framer": {
-		"id": "57a672af-e308-4a27-b5d3-96122b0a9ced",
-		"displayName": "SLDS React for FramerX"
+		"displayName": "Design System FramerX UI Kit",
+		"id": "ea717dce-6738-4b7b-80ca-b7f503a4dc2d"
 	},
-	"author": "Fernando Hurtado",
+	"author": "Darshil Vora",
 	"dependencies": {
 		"@framerjs/component-importer": "^0.0.23",
 		"@salesforce-ux/design-system": "^2.9.4",
-		"@salesforce/design-system-react": "^0.10.11",
+		"@salesforce/design-system-react": "^0.10.17",
 		"moment": "^2.24.0"
 	},
 	"name": "@framer/salesforce.slds-react-for-framerx",
-	"version": "1.2.0"
+	"version": "1.3.0"
 }
