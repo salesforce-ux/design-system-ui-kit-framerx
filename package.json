@@ -20,5 +20,5 @@
 		"moment": "^2.24.0"
 	},
 	"name": "@framer/salesforce.design-system-framerx-ui-kit",
-	"version": "1.0.0"
+	"version": "1.3.0"
 }
