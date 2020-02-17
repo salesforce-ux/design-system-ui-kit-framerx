@@ -3,6 +3,7 @@ import * as System from "@salesforce/design-system-react";
 import { ControlType, addPropertyControls } from "framer";
 import { withHOC } from "./withHOC";
 import { generateIconPropertyControls } from "./utils/propertyControls";
+import { Icon } from './icon'
 
 const InnerCard = props => {
   const sampleItems = props.cardItems.map((item, index) => {
@@ -50,7 +51,7 @@ const InnerCard = props => {
         }
         heading={props.heading}
         icon={
-          <System.Icon
+          <Icon
             category={props.category}
             name={props.name}
             size={props.size}
@@ -115,7 +116,7 @@ addPropertyControls(Card, {
   },
   ...generateIconPropertyControls({
     hidden: props => props.hasNoHeader === true,
-    defaultIconCategory: "standard",
+    defaultIconCategory: "Standard",
     defaultIconName: "document",
     defaultIconSize: "small",
     omittedProperties: ["assistiveText"]
