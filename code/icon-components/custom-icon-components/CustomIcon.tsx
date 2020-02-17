@@ -230,6 +230,14 @@ const icons = {
     custom99: custom99_icon,
 }
 
+const sizes = {
+    "xx-small" : "slds-icon_xx-small", 
+    "x-small" : "slds-icon_x-small",
+    "small" : "slds-icon_small", 
+    "medium" : "slds-icon_medium", 
+    "large": "slds-icon_large"
+}
+
 export function CustomIcon(props) {
     const NamedIcon = icons[props.name]
     return (
@@ -239,7 +247,7 @@ export function CustomIcon(props) {
                   "slds-icon_container slds-icon-custom-" + props.name
               }
           >
-              <NamedIcon {...props} />
+              <NamedIcon {...props} className={"slds-icon " + sizes[props.size]}/>
           </span>
       </figure>
   )

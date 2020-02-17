@@ -84,9 +84,17 @@ const icons = {
     zip: zip_icon,
 }
 
+const sizes = {
+    "xx-small" : "slds-icon_xx-small", 
+    "x-small" : "slds-icon_x-small",
+    "small" : "slds-icon_small", 
+    "medium" : "slds-icon_medium", 
+    "large": "slds-icon_large"
+}
+
 export function DoctypeIcon(props) {
     const NamedIcon = icons[props.name]
-    return <NamedIcon {...props} />
+    return <NamedIcon {...props} className={"slds-icon " + sizes[props.size]}/>
 }
 
 addPropertyControls(DoctypeIcon, {

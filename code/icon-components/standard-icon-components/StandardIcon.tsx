@@ -554,6 +554,14 @@ const icons = {
     work_type: work_type_icon,
 }
 
+const sizes = {
+    "xx-small" : "slds-icon_xx-small", 
+    "x-small" : "slds-icon_x-small",
+    "small" : "slds-icon_small", 
+    "medium" : "slds-icon_medium", 
+    "large": "slds-icon_large"
+}
+
 export function StandardIcon(props) {
     const NamedIcon = icons[props.name]
     return (
@@ -563,7 +571,7 @@ export function StandardIcon(props) {
                     "slds-icon_container slds-icon-standard-" + props.name
                 }
             >
-                <NamedIcon {...props} />
+                <NamedIcon {...props} className={"slds-icon " + sizes[props.size]}/>
             </span>
         </figure>
     )

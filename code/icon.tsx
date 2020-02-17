@@ -44,4 +44,11 @@ addPropertyControls(Icon, {
         type: ControlType.Color,
         defaultValue: "#fff",
     },
+    size: {
+        type: ControlType.Enum,
+        title: "Size",
+        options: ["xx-small", "x-small", "small", "medium", "large"],
+        optionTitles: ["XX-Small", "X-Small", "Small", "Medium", "Large"],
+        defaultValue: "large",
+      },
 })

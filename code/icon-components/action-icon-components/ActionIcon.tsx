@@ -370,9 +370,12 @@ const icons = {
     web_link: web_link_icon,
 }
 
-const style: React.CSSProperties = {
-    width: "100%",
-    height: "100%",
+const sizes = {
+    "xx-small" : "slds-icon_xx-small", 
+    "x-small" : "slds-icon_x-small",
+    "small" : "slds-icon_small", 
+    "medium" : "slds-icon_medium", 
+    "large": "slds-icon_large"
 }
 
 export function ActionIcon(props) {
@@ -384,7 +387,7 @@ export function ActionIcon(props) {
                     "slds-icon_container slds-icon-action-" + props.name.replace("_","-") + " slds-icon_container--circle"
                 }
             >
-                <NamedIcon {...props} style={style} />
+                <NamedIcon {...props} className={"slds-icon " + sizes[props.size]}/>
             </span>
         </figure>
     )
