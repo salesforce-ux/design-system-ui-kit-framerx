@@ -4,6 +4,8 @@ import { ControlType, addPropertyControls } from "framer";
 import { withHOC } from "./withHOC";
 import { generateIconPropertyControls } from "./utils/propertyControls";
 
+import {Icon} from "./icon"
+
 const style: React.CSSProperties = {
   width: "100%",
   height: "100%"
@@ -16,7 +18,7 @@ const InnerScoped = props => {
       style={style}
       icon={
         props.icon ? (
-          <System.Icon
+          <Icon
             category={props.category}
             name={props.name}
             size={props.size}
