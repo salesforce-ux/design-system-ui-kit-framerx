@@ -215,62 +215,6 @@
             "visible" : true,
             "width" : 250,
             "widthType" : 0
-          },
-          {
-            "__class" : "CodeComponentNode",
-            "aspectRatio" : null,
-            "bottom" : null,
-            "centerAnchorX" : 0,
-            "centerAnchorY" : 0,
-            "children" : [
-
-            ],
-            "clip" : true,
-            "codeComponentIdentifier" : ".\/icon.tsx_Icon",
-            "codeComponentProps" : {
-              "category" : "Action",
-              "fill" : "#fff",
-              "name" : "add_contact"
-            },
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : false,
-            "deviceType" : null,
-            "exportOptions" : [
-
-            ],
-            "fillColor" : "rgba(255,255,255,1)",
-            "fillEnabled" : false,
-            "fillImage" : null,
-            "fillImageOriginalName" : null,
-            "fillImagePixelHeight" : null,
-            "fillImagePixelWidth" : null,
-            "fillImageResize" : "fill",
-            "fillType" : "color",
-            "height" : 155,
-            "heightType" : 0,
-            "id" : "btR_o8puK",
-            "intrinsicHeight" : 155,
-            "intrinsicWidth" : 155,
-            "left" : 1068,
-            "locked" : false,
-            "name" : null,
-            "opacity" : 1,
-            "originalid" : null,
-            "parentid" : "Kj54YdxmU",
-            "previewSettings" : null,
-            "radius" : 0,
-            "radiusBottomLeft" : 0,
-            "radiusBottomRight" : 0,
-            "radiusIsRelative" : false,
-            "radiusPerCorner" : false,
-            "radiusTopLeft" : 0,
-            "radiusTopRight" : 0,
-            "right" : null,
-            "rotation" : 0,
-            "top" : 719,
-            "visible" : true,
-            "width" : 155,
-            "widthType" : 0
           }
         ],
         "clip" : true,
@@ -340,10 +284,15 @@
     "originalid" : null,
     "parentid" : null,
     "tokens" : {
-
+      "97084abb-8a7d-4e24-904a-6f9aa1d29855" : {
+        "__class" : "ColorTokenNode",
+        "id" : "97084abb-8a7d-4e24-904a-6f9aa1d29855",
+        "name" : "UtilityIcon-Default",
+        "value" : "rgb(112, 110, 107)"
+      }
     },
     "tokensIndex" : [
-
+      "97084abb-8a7d-4e24-904a-6f9aa1d29855"
     ],
     "visible" : false
   },

@@ -26,8 +26,8 @@ export function Icon(props) {
 }
 
 Icon.defaultProps = {
-    width: 155,
-    height: 155,
+    width: 64,
+    height: 64,
 }
 
 addPropertyControls(Icon, {
