@@ -232,7 +232,17 @@ const icons = {
 
 export function CustomIcon(props) {
     const NamedIcon = icons[props.name]
-    return <NamedIcon {...props} />
+    return (
+      <figure>
+          <span
+              className={
+                  "slds-icon_container slds-icon-custom-" + props.name
+              }
+          >
+              <NamedIcon {...props} />
+          </span>
+      </figure>
+  )
 }
 
 addPropertyControls(CustomIcon, {

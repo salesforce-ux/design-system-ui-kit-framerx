@@ -777,7 +777,7 @@ addPropertyControls(UtilityIcon, {
     fill: {
         type: ControlType.Color,
         title: "Fill",
-        defaultValue: "#ffffff",
+        defaultValue: "#706e6b",
     },
     name: {
         type: ControlType.Enum,

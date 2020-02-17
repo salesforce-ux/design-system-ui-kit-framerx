@@ -556,7 +556,17 @@ const icons = {
 
 export function StandardIcon(props) {
     const NamedIcon = icons[props.name]
-    return <NamedIcon {...props} />
+    return (
+        <figure>
+            <span
+                className={
+                    "slds-icon_container slds-icon-standard-" + props.name
+                }
+            >
+                <NamedIcon {...props} />
+            </span>
+        </figure>
+    )
 }
 
 addPropertyControls(StandardIcon, {

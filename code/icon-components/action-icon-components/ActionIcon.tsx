@@ -372,7 +372,17 @@ const icons = {
 
 export function ActionIcon(props) {
     const NamedIcon = icons[props.name]
-    return <NamedIcon {...props} />
+    return (
+        <figure>
+            <span
+                className={
+                    "slds-icon_container slds-icon-action-" + props.name + " slds-icon_container--circle"
+                }
+            >
+                <NamedIcon {...props} />
+            </span>
+        </figure>
+    )
 }
 
 addPropertyControls(ActionIcon, {

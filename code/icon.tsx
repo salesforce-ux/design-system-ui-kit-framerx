@@ -40,4 +40,8 @@ addPropertyControls(Icon, {
         type: ControlType.String,
         defaultValue: "activity",
     },
+    fill: {
+        type: ControlType.Color,
+        defaultValue: "#fff",
+    },
 })
