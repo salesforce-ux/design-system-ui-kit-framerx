@@ -3,6 +3,7 @@ import * as System from "@salesforce/design-system-react";
 import { ControlType, addPropertyControls } from "framer";
 import { withHOC } from "./withHOC";
 import { generateIconPropertyControls } from "./utils/propertyControls";
+import { Icon } from "./icon"
 
 const style: React.CSSProperties = {
   width: "100%",
@@ -15,7 +16,7 @@ const InnerMedia = props => {
       {...props}
       style={style}
       figure={
-        <System.Icon
+        <Icon
           category={props.category}
           name={props.name}
           size={props.size}
