@@ -1,0 +1,20 @@
+
+import * as React from 'react';
+import { addPropertyControls, ControlType } from 'framer';
+
+export function standard_objects_icon(props) {
+  return (
+    <svg height="52" width="52" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg" {...props}>
+	<path d="m46.2 38.9l-18.8 10.7c-1 0.6-2.3 0.6-3.3 0l-18.7-10.7c-0.8-0.4-0.8-1.4 0-1.8l4.4-2.5c0.3-0.2 0.7-0.2 1 0l11.4 6.5c1.1 0.6 2.3 0.9 3.6 0.9s2.5-0.3 3.6-0.9l11.4-6.5c0.3-0.2 0.7-0.2 1 0l4.4 2.5c0.8 0.4 0.8 1.4 0 1.8z m0-12l-18.8 10.7c-1 0.6-2.3 0.6-3.3 0l-18.7-10.7c-0.8-0.4-0.8-1.4 0-1.8l4.4-2.5c0.3-0.2 0.7-0.2 1 0l11.4 6.5c1.1 0.6 2.3 0.9 3.6 0.9s2.5-0.3 3.6-0.9l11.4-6.5c0.3-0.2 0.7-0.2 1 0l4.4 2.5c0.8 0.4 0.8 1.4 0 1.8z m-21.9-1.3l-18.8-10.7c-0.8-0.4-0.8-1.4 0-1.8l18.8-10.7c1-0.6 2.3-0.6 3.3 0l18.8 10.7c0.8 0.4 0.8 1.4 0 1.8l-18.8 10.7c-1 0.5-2.3 0.5-3.3 0z" fill={props.fill}/>
+</svg>
+  );
+};
+
+addPropertyControls(standard_objects_icon, {
+  fill: {
+    type: ControlType.Color,
+    title: 'Fill',
+    defaultValue: '#ffffff'
+  }
+});
+  

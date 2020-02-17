@@ -1,32 +1,43 @@
-import * as React from "react";
-import * as System from "@salesforce/design-system-react";
-import { addPropertyControls } from "framer";
-import { withHOC } from "./withHOC";
-import { generateIconPropertyControls } from "./utils/propertyControls";
+import * as React from "react"
+import { addPropertyControls, ControlType } from "framer"
 
+import { ActionIcon } from "./icon-components/action-icon-components/ActionIcon"
+import { UtilityIcon } from "./icon-components/utility-icon-components/UtilityIcon"
+import { StandardIcon } from "./icon-components/standard-icon-components/StandardIcon"
+import { DoctypeIcon } from "./icon-components/doctype-icon-components/DoctypeIcon"
+import { CustomIcon } from "./icon-components/custom-icon-components/CustomIcon"
 
 const style: React.CSSProperties = {
-  width: "100%",
-  height: "100%"
-};
+    width: "100%",
+    height: "100%",
+}
 
-const InnerIcon = props => {
-  return (
-    <System.Icon
-      style={style}
-      assistiveText={{ label: props.assistiveText }}
-      category={props.category}
-      name={props.name}
-      size={props.size}
-    />
-  );
-};
+const category = {
+    Utility: UtilityIcon,
+    Action: ActionIcon,
+    Standard: StandardIcon,
+    Doctype: DoctypeIcon,
+    Custom: CustomIcon,
+}
 
-export const Icon = withHOC(InnerIcon);
+export function Icon(props) {
+    const NamedIcon = category[props.category]
+    return <NamedIcon {...props} />
+}
 
 Icon.defaultProps = {
-  width: 155,
-  height: 155
-};
+    width: 155,
+    height: 155,
+}
 
-addPropertyControls(Icon, generateIconPropertyControls());
+addPropertyControls(Icon, {
+    category: {
+        type: ControlType.Enum,
+        options: ["Utility", "Action", "Standard", "Doctype", "Custom"],
+        defaultValue: "Utility",
+    },
+    name: {
+        type: ControlType.String,
+        defaultValue: "activity",
+    },
+})
