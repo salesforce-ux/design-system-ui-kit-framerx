@@ -14,7 +14,7 @@ export function generateIconPropertyControls(
     category: {
       type: ControlType.String,
       title: "Category",
-      defaultValue: options.defaultIconCategory || "action",
+      defaultValue: options.defaultIconCategory || "Action",
       hidden: options.hidden
     },
     name: {
@@ -28,7 +28,7 @@ export function generateIconPropertyControls(
       title: "Size",
       options: ["xx-small", "x-small", "small", "medium", "large"],
       optionTitles: ["XX-Small", "X-Small", "Small", "Medium", "Large"],
-      defaultValue: options.defaultIconSize || "medium",
+      defaultValue: options.defaultIconSize || "x-small",
       hidden: options.hidden
     },
     assistiveText: {
