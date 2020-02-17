@@ -370,16 +370,21 @@ const icons = {
     web_link: web_link_icon,
 }
 
+const style: React.CSSProperties = {
+    width: "100%",
+    height: "100%",
+}
+
 export function ActionIcon(props) {
     const NamedIcon = icons[props.name]
     return (
         <figure>
             <span
                 className={
-                    "slds-icon_container slds-icon-action-" + props.name + " slds-icon_container--circle"
+                    "slds-icon_container slds-icon-action-" + props.name.replace("_","-") + " slds-icon_container--circle"
                 }
             >
-                <NamedIcon {...props} />
+                <NamedIcon {...props} style={style} />
             </span>
         </figure>
     )
