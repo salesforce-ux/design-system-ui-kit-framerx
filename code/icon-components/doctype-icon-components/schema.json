@@ -1,0 +1,242 @@
+[
+  {
+    "id": "/ai_icon",
+    "metadata": {
+      "name": "ai_icon"
+    }
+  },
+  {
+    "id": "/attachment_icon",
+    "metadata": {
+      "name": "attachment_icon"
+    }
+  },
+  {
+    "id": "/audio_icon",
+    "metadata": {
+      "name": "audio_icon"
+    }
+  },
+  {
+    "id": "/box_notes_icon",
+    "metadata": {
+      "name": "box_notes_icon"
+    }
+  },
+  {
+    "id": "/csv_icon",
+    "metadata": {
+      "name": "csv_icon"
+    }
+  },
+  {
+    "id": "/eps_icon",
+    "metadata": {
+      "name": "eps_icon"
+    }
+  },
+  {
+    "id": "/excel_icon",
+    "metadata": {
+      "name": "excel_icon"
+    }
+  },
+  {
+    "id": "/exe_icon",
+    "metadata": {
+      "name": "exe_icon"
+    }
+  },
+  {
+    "id": "/flash_icon",
+    "metadata": {
+      "name": "flash_icon"
+    }
+  },
+  {
+    "id": "/folder_icon",
+    "metadata": {
+      "name": "folder_icon"
+    }
+  },
+  {
+    "id": "/gdoc_icon",
+    "metadata": {
+      "name": "gdoc_icon"
+    }
+  },
+  {
+    "id": "/gdocs_icon",
+    "metadata": {
+      "name": "gdocs_icon"
+    }
+  },
+  {
+    "id": "/gform_icon",
+    "metadata": {
+      "name": "gform_icon"
+    }
+  },
+  {
+    "id": "/gpres_icon",
+    "metadata": {
+      "name": "gpres_icon"
+    }
+  },
+  {
+    "id": "/gsheet_icon",
+    "metadata": {
+      "name": "gsheet_icon"
+    }
+  },
+  {
+    "id": "/html_icon",
+    "metadata": {
+      "name": "html_icon"
+    }
+  },
+  {
+    "id": "/image_icon",
+    "metadata": {
+      "name": "image_icon"
+    }
+  },
+  {
+    "id": "/keynote_icon",
+    "metadata": {
+      "name": "keynote_icon"
+    }
+  },
+  {
+    "id": "/library_folder_icon",
+    "metadata": {
+      "name": "library_folder_icon"
+    }
+  },
+  {
+    "id": "/link_icon",
+    "metadata": {
+      "name": "link_icon"
+    }
+  },
+  {
+    "id": "/mp4_icon",
+    "metadata": {
+      "name": "mp4_icon"
+    }
+  },
+  {
+    "id": "/overlay_icon",
+    "metadata": {
+      "name": "overlay_icon"
+    }
+  },
+  {
+    "id": "/pack_icon",
+    "metadata": {
+      "name": "pack_icon"
+    }
+  },
+  {
+    "id": "/pages_icon",
+    "metadata": {
+      "name": "pages_icon"
+    }
+  },
+  {
+    "id": "/pdf_icon",
+    "metadata": {
+      "name": "pdf_icon"
+    }
+  },
+  {
+    "id": "/ppt_icon",
+    "metadata": {
+      "name": "ppt_icon"
+    }
+  },
+  {
+    "id": "/psd_icon",
+    "metadata": {
+      "name": "psd_icon"
+    }
+  },
+  {
+    "id": "/quip_doc_icon",
+    "metadata": {
+      "name": "quip_doc_icon"
+    }
+  },
+  {
+    "id": "/quip_sheet_icon",
+    "metadata": {
+      "name": "quip_sheet_icon"
+    }
+  },
+  {
+    "id": "/rtf_icon",
+    "metadata": {
+      "name": "rtf_icon"
+    }
+  },
+  {
+    "id": "/slide_icon",
+    "metadata": {
+      "name": "slide_icon"
+    }
+  },
+  {
+    "id": "/stypi_icon",
+    "metadata": {
+      "name": "stypi_icon"
+    }
+  },
+  {
+    "id": "/txt_icon",
+    "metadata": {
+      "name": "txt_icon"
+    }
+  },
+  {
+    "id": "/unknown_icon",
+    "metadata": {
+      "name": "unknown_icon"
+    }
+  },
+  {
+    "id": "/video_icon",
+    "metadata": {
+      "name": "video_icon"
+    }
+  },
+  {
+    "id": "/visio_icon",
+    "metadata": {
+      "name": "visio_icon"
+    }
+  },
+  {
+    "id": "/webex_icon",
+    "metadata": {
+      "name": "webex_icon"
+    }
+  },
+  {
+    "id": "/word_icon",
+    "metadata": {
+      "name": "word_icon"
+    }
+  },
+  {
+    "id": "/xml_icon",
+    "metadata": {
+      "name": "xml_icon"
+    }
+  },
+  {
+    "id": "/zip_icon",
+    "metadata": {
+      "name": "zip_icon"
+    }
+  }
+]
