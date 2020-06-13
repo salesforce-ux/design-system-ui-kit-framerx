@@ -26,8 +26,8 @@ export function Icon(props) {
 }
 
 Icon.defaultProps = {
-    width: 64,
-    height: 64,
+    width: 48,
+    height: 48,
 }
 
 addPropertyControls(Icon, {
@@ -50,5 +50,5 @@ addPropertyControls(Icon, {
         options: ["xx-small", "x-small", "small", "medium", "large"],
         optionTitles: ["XX-Small", "X-Small", "Small", "Medium", "Large"],
         defaultValue: "large",
-      },
+    },
 })
