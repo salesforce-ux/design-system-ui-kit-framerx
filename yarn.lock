@@ -2,6 +2,14 @@
 # yarn lockfile v1
 
 
+"@framer/tishogeorgiev.switch@^1.14.0":
+  version "1.14.0"
+  resolved "https://registry.framer.com/@framer/tishogeorgiev.switch/-/@framer/tishogeorgiev.switch-1.14.0.tgz#664d2a0655f6cb668d942f456263064fd21a7c5f"
+  integrity sha512-mLdMV4b6y2m8GXmxBXBEdHUQ6pvS3U8xGuk/1b+8BJCQPNnOteZOTDvdEPh69yALESxr24EzqKMqa/4w9xdl2g==
+  dependencies:
+    hotkeys-js "^3.7.3"
+    reactn "^2.2.4"
+
 "@framerjs/component-importer@^0.0.23":
   version "0.0.23"
   resolved "https://registry.yarnpkg.com/@framerjs/component-importer/-/component-importer-0.0.23.tgz#d2b01a2ef61cf733afcd5e0b8cc00ce902253841"
@@ -648,6 +656,11 @@ homedir-polyfill@^1.0.1:
   integrity sha512-eSmmWE5bZTK2Nou4g0AI3zZ9rswp7GRKoKXS1BLUkvPviOqs4YTN1djQIqrXy9k5gEtdLPy86JjRwsNM9tnDcA==
   dependencies:
     parse-passwd "^1.0.0"
+
+hotkeys-js@^3.7.3:
+  version "3.7.3"
+  resolved "https://registry.yarnpkg.com/hotkeys-js/-/hotkeys-js-3.7.3.tgz#f0c718166e844b3e52065d1b60cffaa6065b5183"
+  integrity sha512-CSaeVPAKEEYNexYR35znMJnCqoofk7oqG/AOOqWow1qDT0Yxy+g+Y8Hs/LhGlsZaSJ7973YN6/N41LAr3t30QQ==
 
 iconv-lite@~0.4.13:
   version "0.4.24"
@@ -1296,6 +1309,13 @@ react-text-truncate@^0.14.1:
   dependencies:
     prop-types "^15.5.7"
 
+reactn@^2.2.4:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/reactn/-/reactn-2.2.5.tgz#1f5d7d89738b5909d5afb6399f36200467c8078f"
+  integrity sha512-+8ZG0veUZj1X+xAXiL4YqvQWnZTmaMQ5eTaRcHjbXyO67z+9BmftnqQRxfZ+xV3ZHqXxTXnYdXeCGIOygYUZuw==
+  dependencies:
+    use-force-update "^1.0.5"
+
 readable-stream@^2.0.1:
   version "2.3.6"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.3.6.tgz#b11c27d88b8ff1fbe070643cf94b0c79ae1b0aaf"
@@ -1613,6 +1633,11 @@ urix@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
+
+use-force-update@^1.0.5:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/use-force-update/-/use-force-update-1.0.7.tgz#f5e672633f5a398b25c33b2287150918bcb3526b"
+  integrity sha512-k5dppYhO+I5X/cd7ildbrzeMZJkWwdAh5adaIk0qKN2euh7J0h2GBGBcB4QZ385eyHHnp7LIygvebdRx3XKdwA==
 
 use@^3.1.0:
   version "3.1.1"
