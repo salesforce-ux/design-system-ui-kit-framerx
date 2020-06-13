@@ -14,6 +14,8 @@
 	"author": "Darshil Vora",
 	"dependencies": {
 		"@framer/darshilv.lightning-design-system-ui-icon-kit": "^1.0.0",
-		"@framer/framer.default": "^1.71.0"
+		"@framer/framer.default": "^1.71.0",
+		"@salesforce-ux/design-system": "^2.9.4",
+		"@salesforce/design-system-react": "^0.10.17"
 	}
 }
