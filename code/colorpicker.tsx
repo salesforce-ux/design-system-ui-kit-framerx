@@ -8,7 +8,7 @@ const style: React.CSSProperties = {
     height: "100%",
 }
 
-const InnerColor = props => {
+export function Color(props) {
     return (
         <System.ColorPicker
             {...props}
@@ -20,8 +20,6 @@ const InnerColor = props => {
         />
     )
 }
-
-export const Color = withHOC(InnerColor)
 
 Color.defaultProps = {
     width: 150,

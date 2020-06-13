@@ -1,14 +1,13 @@
 import * as React from "react"
 import * as System from "@salesforce/design-system-react"
 import { ControlType, addPropertyControls } from "framer"
-import { withHOC } from "./withHOC"
 
 const style: React.CSSProperties = {
     width: "100%",
     height: "100%",
 }
 
-export const Input = (props) => {
+export function Input(props) {
     function onChange(e: React.ChangeEvent) {
         const element = e.nativeEvent.target as HTMLInputElement
         const inputValue = element.value

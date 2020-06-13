@@ -10,7 +10,7 @@ const style: React.CSSProperties = {
     height: "100%",
 }
 
-const InnerFiles = props => {
+export function Files(props) {
     return (
         <System.Files>
             <System.File
@@ -29,8 +29,6 @@ const InnerFiles = props => {
         </System.Files>
     )
 }
-
-export const Files = withHOC(InnerFiles)
 
 Files.defaultProps = {
     width: 1000,
@@ -51,24 +49,24 @@ addPropertyControls(Files, {
         optionTitles: ["16-by-9", "4-by-3", "1-by-1"],
         defaultValue: "1-by-1",
     },
-    category:{
-      type: ControlType.Enum,
-      options: ["Utility", "Action", "Standard", "Doctype", "Custom"],
-      defaultValue: "Action",
+    category: {
+        type: ControlType.Enum,
+        options: ["Utility", "Action", "Standard", "Doctype", "Custom"],
+        defaultValue: "Action",
     },
     name: {
-      type: ControlType.String,
-      defaultValue: "add_contact",
+        type: ControlType.String,
+        defaultValue: "add_contact",
     },
     fill: {
-      type: ControlType.Color,
-      defaultValue: "#fff",
+        type: ControlType.Color,
+        defaultValue: "#fff",
     },
     size: {
-      type: ControlType.Enum,
-      title: "Size",
-      options: ["xx-small", "x-small", "small", "medium", "large"],
-      optionTitles: ["XX-Small", "X-Small", "Small", "Medium", "Large"],
-      defaultValue: "large",
+        type: ControlType.Enum,
+        title: "Size",
+        options: ["xx-small", "x-small", "small", "medium", "large"],
+        optionTitles: ["XX-Small", "X-Small", "Small", "Medium", "Large"],
+        defaultValue: "large",
     },
 })
