@@ -9,13 +9,11 @@
 		"react": "^16.8"
 	},
 	"framer": {
-		"id": "e7579673-fbc2-417c-bab0-c5dfa258d844",
-		"displayName": "Design System UI Icon Kit"
+		"id": "8244f9df-6f6c-4e1e-97cf-c409a456db4d"
 	},
 	"author": "Darshil Vora",
-	"name": "@framer/salesforce.design-system-ui-icon-kit",
-	"version": "1.2.0",
 	"dependencies": {
+		"@framer/darshilv.lightning-design-system-ui-icon-kit": "^1.0.0",
 		"@framer/framer.default": "^1.71.0"
 	}
 }

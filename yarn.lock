@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@framer/darshilv.lightning-design-system-ui-icon-kit@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.framer.com/@framer/darshilv.lightning-design-system-ui-icon-kit/-/@framer/darshilv.lightning-design-system-ui-icon-kit-1.0.0.tgz#0d53f7f1a61ba3a8979f9f1493c8d4518bea7b88"
+  integrity sha512-ZIYL0Ci5E6GPEzc1tk6Id8Aev8WGEXuvIGTGxiEdJnBjTiNCz+FZwOq+eGY0PRmNcq1Z6BR+JPCEFoVDt1Xrtw==
+  dependencies:
+    "@framer/framer.default" "^1.71.0"
+
 "@framer/framer.default@^1.71.0":
   version "1.71.0"
   resolved "https://registry.framer.com/@framer/framer.default/-/@framer/framer.default-1.71.0.tgz#b9686541c57222025cfc7d582578c9fabe4419ee"

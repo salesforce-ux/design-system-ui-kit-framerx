@@ -1,1 +1,0 @@
-This package contains all the icons in Lightning Design System as of Feb 20, 2020.
