@@ -1,5 +1,6 @@
 import * as React from "react"
 import { addPropertyControls, ControlType } from "framer"
+import "../slds-icon-styles.css"
 import { account_icon } from ".//account_icon"
 import { action_list_component_icon } from ".//action_list_component_icon"
 import { actions_and_buttons_icon } from ".//actions_and_buttons_icon"
@@ -555,11 +556,11 @@ const icons = {
 }
 
 const sizes = {
-    "xx-small" : "slds-icon_xx-small", 
-    "x-small" : "slds-icon_x-small",
-    "small" : "slds-icon_small", 
-    "medium" : "slds-icon_medium", 
-    "large": "slds-icon_large"
+    "xx-small": "slds-icon_xx-small",
+    "x-small": "slds-icon_x-small",
+    small: "slds-icon_small",
+    medium: "slds-icon_medium",
+    large: "slds-icon_large",
 }
 
 export function StandardIcon(props) {
@@ -571,12 +572,18 @@ export function StandardIcon(props) {
                     "slds-icon_container slds-icon-standard-" + props.name
                 }
             >
-                <NamedIcon {...props} className={"slds-icon " + sizes[props.size]}/>
+                <NamedIcon
+                    {...props}
+                    className={"slds-icon " + sizes[props.size]}
+                />
             </span>
         </figure>
     )
 }
-
+StandardIcon.defaultProps = {
+    width: 24,
+    height: 25,
+}
 addPropertyControls(StandardIcon, {
     fill: {
         type: ControlType.Color,
@@ -862,5 +869,10 @@ addPropertyControls(StandardIcon, {
             "work_type_group",
             "work_type_icon",
         ],
+    },
+    size: {
+        type: ControlType.Enum,
+        options: ["xx-small", "x-small", "small", "medium", "large"],
+        defaultValue: "small",
     },
 })

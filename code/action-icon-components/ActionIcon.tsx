@@ -1,5 +1,6 @@
 import * as React from "react"
 import { addPropertyControls, ControlType } from "framer"
+import "../slds-icon-styles.css"
 import { add_contact_icon } from ".//add_contact_icon"
 import { add_file_icon } from ".//add_file_icon"
 import { add_photo_video_icon } from ".//add_photo_video_icon"
@@ -371,11 +372,11 @@ const icons = {
 }
 
 const sizes = {
-    "xx-small" : "slds-icon_xx-small", 
-    "x-small" : "slds-icon_x-small",
-    "small" : "slds-icon_small", 
-    "medium" : "slds-icon_medium", 
-    "large": "slds-icon_large"
+    "xx-small": "slds-icon_xx-small",
+    "x-small": "slds-icon_x-small",
+    small: "slds-icon_small",
+    medium: "slds-icon_medium",
+    large: "slds-icon_large",
 }
 
 export function ActionIcon(props) {
@@ -384,13 +385,23 @@ export function ActionIcon(props) {
         <figure>
             <span
                 className={
-                    "slds-icon_container slds-icon-action-" + props.name.replace("_","-") + " slds-icon_container--circle"
+                    "slds-icon_container slds-icon-action-" +
+                    props.name.replace("_", "-") +
+                    " slds-icon_container--circle"
                 }
             >
-                <NamedIcon {...props} className={"slds-icon " + sizes[props.size]}/>
+                <NamedIcon
+                    {...props}
+                    className={"slds-icon " + sizes[props.size]}
+                />
             </span>
         </figure>
     )
+}
+
+ActionIcon.defaultProps = {
+    width: 40,
+    height: 41,
 }
 
 addPropertyControls(ActionIcon, {
@@ -586,5 +597,10 @@ addPropertyControls(ActionIcon, {
             "view_relationship",
             "web_link",
         ],
+    },
+    size: {
+        type: ControlType.Enum,
+        options: ["xx-small", "x-small", "small", "medium", "large"],
+        defaultValue: "small",
     },
 })

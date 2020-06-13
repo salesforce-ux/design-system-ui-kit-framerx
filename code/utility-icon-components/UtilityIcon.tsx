@@ -1,5 +1,6 @@
 import * as React from "react"
 import { addPropertyControls, ControlType } from "framer"
+import "../slds-icon-styles.css"
 import { activity_icon } from ".//activity_icon"
 import { ad_set_icon } from ".//ad_set_icon"
 import { add_icon } from ".//add_icon"
@@ -769,16 +770,30 @@ const icons = {
 }
 
 const sizes = {
-    "xx-small" : "slds-icon_xx-small", 
-    "x-small" : "slds-icon_x-small",
-    "small" : "slds-icon_small", 
-    "medium" : "slds-icon_medium", 
-    "large": "slds-icon_large"
+    "xx-small": "slds-icon_xx-small",
+    "x-small": "slds-icon_x-small",
+    small: "slds-icon_small",
+    medium: "slds-icon_medium",
+    large: "slds-icon_large",
 }
 
 export function UtilityIcon(props) {
     const NamedIcon = icons[props.name]
-    return <NamedIcon {...props} className={"slds-icon " + sizes[props.size]}/>
+    return (
+        <figure>
+            <span className={"slds-icon_container"}>
+                <NamedIcon
+                    {...props}
+                    className={"slds-icon " + sizes[props.size]}
+                />
+            </span>
+        </figure>
+    )
+}
+
+UtilityIcon.defaultProps = {
+    width: 24,
+    height: 25,
 }
 
 addPropertyControls(UtilityIcon, {
@@ -1173,5 +1188,10 @@ addPropertyControls(UtilityIcon, {
             "zoomin",
             "zoomout",
         ],
+    },
+    size: {
+        type: ControlType.Enum,
+        options: ["xx-small", "x-small", "small", "medium", "large"],
+        defaultValue: "small",
     },
 })

@@ -1,5 +1,6 @@
 import * as React from "react"
 import { addPropertyControls, ControlType } from "framer"
+import "../slds-icon-styles.css"
 import { ai_icon } from ".//ai_icon"
 import { attachment_icon } from ".//attachment_icon"
 import { audio_icon } from ".//audio_icon"
@@ -85,16 +86,21 @@ const icons = {
 }
 
 const sizes = {
-    "xx-small" : "slds-icon_xx-small", 
-    "x-small" : "slds-icon_x-small",
-    "small" : "slds-icon_small", 
-    "medium" : "slds-icon_medium", 
-    "large": "slds-icon_large"
+    "xx-small": "slds-icon_xx-small",
+    "x-small": "slds-icon_x-small",
+    small: "slds-icon_small",
+    medium: "slds-icon_medium",
+    large: "slds-icon_large",
 }
 
 export function DoctypeIcon(props) {
     const NamedIcon = icons[props.name]
-    return <NamedIcon {...props} className={"slds-icon " + sizes[props.size]}/>
+    return <NamedIcon {...props} className={"slds-icon " + sizes[props.size]} />
+}
+
+DoctypeIcon.defaultProps = {
+    width: 24,
+    height: 25,
 }
 
 addPropertyControls(DoctypeIcon, {
@@ -147,5 +153,10 @@ addPropertyControls(DoctypeIcon, {
             "xml",
             "zip_icon",
         ],
+    },
+    size: {
+        type: ControlType.Enum,
+        options: ["xx-small", "x-small", "small", "medium", "large"],
+        defaultValue: "small",
     },
 })

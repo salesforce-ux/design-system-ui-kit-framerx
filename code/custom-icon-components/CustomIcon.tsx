@@ -1,5 +1,6 @@
 import * as React from "react"
 import { addPropertyControls, ControlType } from "framer"
+import "../slds-icon-styles.css"
 import { custom1_icon } from ".//custom1_icon"
 import { custom10_icon } from ".//custom10_icon"
 import { custom100_icon } from ".//custom100_icon"
@@ -231,26 +232,32 @@ const icons = {
 }
 
 const sizes = {
-    "xx-small" : "slds-icon_xx-small", 
-    "x-small" : "slds-icon_x-small",
-    "small" : "slds-icon_small", 
-    "medium" : "slds-icon_medium", 
-    "large": "slds-icon_large"
+    "xx-small": "slds-icon_xx-small",
+    "x-small": "slds-icon_x-small",
+    small: "slds-icon_small",
+    medium: "slds-icon_medium",
+    large: "slds-icon_large",
 }
 
 export function CustomIcon(props) {
     const NamedIcon = icons[props.name]
     return (
-      <figure>
-          <span
-              className={
-                  "slds-icon_container slds-icon-custom-" + props.name
-              }
-          >
-              <NamedIcon {...props} className={"slds-icon " + sizes[props.size]}/>
-          </span>
-      </figure>
-  )
+        <figure>
+            <span
+                className={"slds-icon_container slds-icon-custom-" + props.name}
+            >
+                <NamedIcon
+                    {...props}
+                    className={"slds-icon " + sizes[props.size]}
+                />
+            </span>
+        </figure>
+    )
+}
+
+CustomIcon.defaultProps = {
+    width: 24,
+    height: 25,
 }
 
 addPropertyControls(CustomIcon, {
@@ -376,5 +383,10 @@ addPropertyControls(CustomIcon, {
             "custom98",
             "custom99_icon",
         ],
+    },
+    size: {
+        type: ControlType.Enum,
+        options: ["xx-small", "x-small", "small", "medium", "large"],
+        defaultValue: "small",
     },
 })

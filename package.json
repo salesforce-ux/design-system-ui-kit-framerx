@@ -1,6 +1,6 @@
 {
-	"license": "MIT",
 	"main": "dist/index.js",
+	"license": "MIT",
 	"devDependencies": {
 		"@types/react": "^16.8"
 	},
@@ -9,17 +9,13 @@
 		"react": "^16.8"
 	},
 	"framer": {
-		"displayName": "Design System FramerX UI Kit",
-		"id": "ea717dce-6738-4b7b-80ca-b7f503a4dc2d"
+		"id": "e7579673-fbc2-417c-bab0-c5dfa258d844",
+		"displayName": "Design System UI Icon Kit"
 	},
 	"author": "Darshil Vora",
+	"name": "@framer/salesforce.design-system-ui-icon-kit",
+	"version": "1.2.0",
 	"dependencies": {
-		"@framer/tishogeorgiev.switch": "^1.14.0",
-		"@framerjs/component-importer": "^0.0.23",
-		"@salesforce-ux/design-system": "^2.9.4",
-		"@salesforce/design-system-react": "^0.10.17",
-		"moment": "^2.24.0"
-	},
-	"name": "@framer/salesforce.design-system-framerx-ui-kit",
-	"version": "1.5.0"
+		"@framer/framer.default": "^1.71.0"
+	}
 }
