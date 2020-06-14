@@ -10,7 +10,7 @@ const style: React.CSSProperties = {
     height: "100%",
 }
 
-const InnerToast = props => {
+export const Toast = function (props) {
     return (
         <System.ToastContainer>
             <System.Toast
@@ -34,8 +34,6 @@ const InnerToast = props => {
         </System.ToastContainer>
     )
 }
-
-export const Toast = withHOC(InnerToast)
 
 Toast.defaultProps = {
     width: 700,
@@ -63,5 +61,7 @@ addPropertyControls(Toast, {
         options: ["error", "info", "success", "warning"],
         optionTitles: ["Error", "Info", "Success", "Warning"],
     },
-    ...generateIconPropertyControls({ hidden: props => props.icon === false }),
+    ...generateIconPropertyControls({
+        hidden: (props) => props.icon === false,
+    }),
 })
