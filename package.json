@@ -9,7 +9,8 @@
 		"react": "^16.8"
 	},
 	"framer": {
-		"id": "8244f9df-6f6c-4e1e-97cf-c409a456db4d"
+		"id": "8244f9df-6f6c-4e1e-97cf-c409a456db4d",
+		"displayName": "Lightning Design System UI Kit"
 	},
 	"author": "Darshil Vora",
 	"dependencies": {
@@ -17,5 +18,7 @@
 		"@framer/framer.default": "^1.71.0",
 		"@salesforce-ux/design-system": "^2.9.4",
 		"@salesforce/design-system-react": "^0.10.17"
-	}
+	},
+	"name": "@framer/darshilv.lightning-design-system-ui-kit",
+	"version": "1.0.0"
 }

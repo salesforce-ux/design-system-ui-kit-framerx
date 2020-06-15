@@ -270,6 +270,63 @@
             "visible" : true,
             "width" : 700,
             "widthType" : 0
+          },
+          {
+            "__class" : "CodeComponentNode",
+            "aspectRatio" : null,
+            "bottom" : 269,
+            "centerAnchorX" : 0.47708333333333336,
+            "centerAnchorY" : 0.6744444444444444,
+            "clip" : true,
+            "codeComponentIdentifier" : ".\/icon.tsx_Icon",
+            "codeComponentPackageVersion" : "1.71.0",
+            "codeComponentProps" : {
+              "category" : "Utility",
+              "fill" : "hsl(0, 87%, 32%)",
+              "name" : "activity",
+              "size" : "large"
+            },
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : [
+              "BiO5w1A7J"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "height" : 48,
+            "heightType" : 0,
+            "id" : "dZXKdMWUb",
+            "intrinsicHeight" : 48,
+            "intrinsicWidth" : 48,
+            "left" : 663,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "a52TCBUy8",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "right" : null,
+            "rotation" : 0,
+            "top" : null,
+            "visible" : true,
+            "width" : 48,
+            "widthType" : 0
           }
         ],
         "clip" : true,
@@ -333,7 +390,7 @@
     "guidesY" : [
 
     ],
-    "homeNodeId" : null,
+    "homeNodeId" : "a52TCBUy8",
     "id" : "JkrHrhIjq",
     "name" : null,
     "originalid" : null,
